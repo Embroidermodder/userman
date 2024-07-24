@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
-      - name: Deps
-        run: # bash scripts/deps.sh
       - name: Build
         run: bash build.sh
       - uses: actions/upload-artifact@v4
