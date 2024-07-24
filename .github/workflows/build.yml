@@ -10,7 +10,9 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Build
-        run: bash build.sh
+        run: |
+          sudo apt install latexmk
+          bash build.sh
       - uses: actions/upload-artifact@v4
         with:
           name: refman
