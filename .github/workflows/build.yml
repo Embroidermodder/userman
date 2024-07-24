@@ -11,6 +11,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Build
         run: |
+          sudo apt update
           sudo apt install latexmk
           bash build.sh
       - uses: actions/upload-artifact@v4
