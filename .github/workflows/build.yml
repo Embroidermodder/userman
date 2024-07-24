@@ -12,7 +12,7 @@ jobs:
       - name: Build
         run: |
           sudo apt update
-          sudo apt install latexmk
+          sudo apt install latexmk texlive
           bash build.sh
       - uses: actions/upload-artifact@v4
         with:
